@@ -1,8 +1,9 @@
-Integrantes 
+# ✨R-Green✨
+## Integrantes
 
-* Andres Narvaés
-* Ederson Fajardo
-* Fernando Parra
-* Juan Camilo Tobon 
-* Andres David Solarte
-* Valentina Viafara
+- Andrés Narvaéz
+- Ederson Fajardo
+- Fernando Parra
+- Juan Camilo Tobon
+- Andrés David Solarte
+- Valentina Viafara
