@@ -9,5 +9,5 @@
 - Andres David Solarte
 - Valentina Viafara
 
-* npm install react-router-dom --save
+* npm install react-router-dom --Save
 * npm i redux react-redux --Save
