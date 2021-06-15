@@ -7,6 +7,16 @@ const reducer = (state,action)=>{
           ...state.myList, action.payLoad
         ]
       }
+    case 'LOGIN_REQUEST':
+      return{
+        ...state,
+        user: action.payLoad
+      }
+    case 'LOGOUT_REQUEST':
+      return{
+        ...state,
+        user: action.payLoad
+      }
     default:
       return state;
   }
