@@ -17,6 +17,11 @@ const reducer = (state,action)=>{
         ...state,
         user: action.payLoad
       }
+    case 'REGISTER_REQUEST':
+      return{
+        ...state,
+        user: action.payLoad
+      }
     default:
       return state;
   }
