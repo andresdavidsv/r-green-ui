@@ -11,3 +11,4 @@
 
 * npm install react-router-dom --Save
 * npm i redux react-redux --Save
+* npm i md5 --save
