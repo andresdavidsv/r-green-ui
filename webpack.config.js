@@ -1,51 +1,51 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
-    publicPatch: "/",
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js',
+    publicPatch: '/',
   },
   resolve: {
-    extensions: [".js", ".jsx"],
+    extensions: ['.js', '.jsx'],
     alias: {
-      "@components": path.resolve(__dirname, "src/components/"),
-      "@styles": path.resolve(__dirname, "src/styles/"),
+      '@components': path.resolve(__dirname, 'src/components/'),
+      '@styles': path.resolve(__dirname, 'src/styles/'),
     },
   },
-  mode: "production",
+  mode: 'production',
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
         },
       },
       {
         test: /\.html$/,
-        use: [{ loader: "html-loader" }],
+        use: [{ loader: 'html-loader' }],
       },
       {
         test: /\.s[ac]ss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./public/index.html",
-      filename: "index.html",
+      template: './public/index.html',
+      filename: 'index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: "[name].css",
+      filename: '[name].css',
     }),
     new CleanWebpackPlugin(),
   ],
