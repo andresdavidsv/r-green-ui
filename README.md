@@ -1,9 +1,14 @@
-# ✨R-Green✨
-## Integrantes
+# R-Green
 
-- Andrés Narvaéz
+## Colaborators
+
+- Andres Narvaéz
 - Ederson Fajardo
 - Fernando Parra
 - Juan Camilo Tobon
-- Andrés David Solarte
+- Andres David Solarte
 - Valentina Viafara
+
+* npm install react-router-dom --Save
+* npm i redux react-redux --Save
+* npm i md5 --save
