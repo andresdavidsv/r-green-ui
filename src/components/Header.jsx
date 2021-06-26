@@ -12,20 +12,19 @@ const Header = (props) => {
   };
 
 return (
-  <header className="header">
+  <header className='header'>
     <Link to='/'>
       <img className='header__img' src='' alt='R Green' />
     </Link>
     <div className='header__menu'>
-      <div className='header__menu--profile'>
-        {hasUser ? (
-          <img src={gravatar(user.email)} alt={user.email} />
-        ) : (
-          <img src='' alt='User icon' />
-        )}
-        <p>Perfil</p>
-      </div>
       <ul>
+      <li className='header__menu--profile'>
+        <p>
+          <Link to='/peticiones'>
+            Perfil
+          </Link> 
+        </p>
+      </li>
         {hasUser ? (
           <li>
             <Link to='/'>{user.name}</Link>
