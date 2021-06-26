@@ -6,6 +6,9 @@ import Register from '../containers/Register';
 import NotFound from '../containers/NotFound';
 import Layout from '../components/Layout';
 
+import Pedir from '../containers/Pedir';
+
+
 const App = () => (
   <BrowserRouter>
     <Layout>
@@ -13,6 +16,10 @@ const App = () => (
         <Route exact path='/' component={Home} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/register' component={Register} />
+
+        <Route exact path='/pedir' component={Pedir}/>
+
+
         <Route component={NotFound} />
       </Switch>
     </Layout>

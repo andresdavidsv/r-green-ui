@@ -11,41 +11,48 @@ const Header = (props) => {
     props.logoutRequest({});
   };
 
-return (
-  <header className="header">
-    <Link to='/'>
-      <img className='header__img' src='' alt='R Green' />
-    </Link>
-    <div className='header__menu'>
-      <div className='header__menu--profile'>
-        {hasUser ? (
-          <img src={gravatar(user.email)} alt={user.email} />
-        ) : (
-          <img src='' alt='User icon' />
-        )}
-        <p>Perfil</p>
+  return (
+    <header className="header">
+      <Link to='/'>
+        <img className='header__img' src='' alt='R Green' />
+      </Link>
+      <div className='header__menu'>
+
+        <div className='header__menu--profile'>
+          {hasUser ? (
+            <img src={gravatar(user.email)} alt={user.email} />
+          ) : (
+            <img src='' alt='User icon' />
+          )}
+          <p>Perfil</p>
+        </div>
+
+        <div className='header__menu--profile'>
+          
+          <p>Pedir</p>
+        </div>
+
+        <ul>
+          {hasUser ? (
+            <li>
+              <Link to='/'>{user.name}</Link>
+            </li>
+          ) : null}
+          {hasUser ? (
+            <li>
+              <Link to='/' onClick={handleLogout}>
+                Cerrar Sesión
+              </Link>
+            </li>
+          ) : (
+            <li>
+              <Link to='/login'>Iniciar Sesión</Link>
+            </li>
+          )}
+        </ul>
       </div>
-      <ul>
-        {hasUser ? (
-          <li>
-            <Link to='/'>{user.name}</Link>
-          </li>
-        ) : null}
-        {hasUser ? (
-          <li>
-            <Link to='/' onClick={handleLogout}>
-              Cerrar Sesión
-            </Link>
-          </li>
-        ) : (
-          <li>
-            <Link to='/login'>Iniciar Sesión</Link>
-          </li>
-        )}
-      </ul>
-    </div>
-  </header>
-);
+    </header>
+  );
 };
 
 const mapStateToProps = (state) => {
