@@ -11,6 +11,7 @@ const Home = ({myList,trends,originals}) => (
     ))}
   </div>
   </>
+  
 );
 
 const mapStateToProps = state =>{

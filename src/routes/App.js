@@ -19,7 +19,6 @@ const App = () => (
 
         <Route exact path='/pedir' component={Pedir}/>
 
-
         <Route component={NotFound} />
       </Switch>
     </Layout>
