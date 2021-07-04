@@ -17,6 +17,19 @@ return (
       <img className='header__img' src='' alt='R Green' />
     </Link>
     <div className='header__menu'>
+<<<<<<< Updated upstream
+=======
+      <div className='header__menu--profile'>
+        {hasUser ? (
+          <img src={gravatar(user.email)} alt={user.email} />
+        ) : (
+          <img src='' alt='User icon' />
+        )}
+        <li>
+            <Link to='/Porfile'>Cerrar Sesión</Link>
+          </li>
+      </div>
+>>>>>>> Stashed changes
       <ul>
       <li className='header__menu--profile'>
         <p>

@@ -5,7 +5,9 @@ import Login from '../containers/Login';
 import Register from '../containers/Register';
 import Peticiones from '../containers/Peticiones';
 import NotFound from '../containers/NotFound';
+import Peticiones from '../containers/Peticiones';
 import Layout from '../components/Layout';
+import Porfile from '../components/Porfile';
 
 
 const App = () => (
@@ -16,6 +18,10 @@ const App = () => (
         <Route exact path='/login' component={Login} />
         <Route exact path='/register' component={Register} />
         <Route exact path='/peticiones' component={Peticiones} />
+<<<<<<< Updated upstream
+=======
+        <Route exact path='/porfile' component={Porfile} />
+>>>>>>> Stashed changes
         <Route component={NotFound} />
       </Switch>
     </Layout>

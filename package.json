@@ -1,7 +1,7 @@
 {
   "name": "r-green",
   "version": "1.0.0",
-  "description": "* Andres Narvaés\r * Ederson Fajardo\r * Fernando Parra\r * Juan Camilo Tobon \r * Andres David Solarte\r * Valentina Viafara",
+  "description": "* Andres Narvaéz\r * Ederson Fajardo\r * Fernando Parra\r * Juan Camilo Tobon \r * Andres David Solarte\r * Valentina Viafara",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/ValentinaViafara/R-Green#readme",
   "dependencies": {
+    "@headlessui/react": "^1.3.0",
+    "heroicons-react": "^1.4.1",
     "md5": "^2.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -31,6 +33,7 @@
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.12",
     "@babel/preset-react": "^7.12.13",
+    "@iconify-icons/heroicons-outline": "^1.1.2",
     "@tailwindcss/postcss7-compat": "^2.0.4",
     "autoprefixer": "^9.8.6",
     "babel-loader": "^8.2.2",

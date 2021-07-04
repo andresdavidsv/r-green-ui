@@ -38,8 +38,13 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
+<<<<<<< Updated upstream
         test:/\.(png|jpg|jpeg)$/i,
         use:[{ loader: 'file-loader' }],
+=======
+        test: /.(png|jpg|jpeg)$/i,
+        type: 'assets/resource',
+>>>>>>> Stashed changes
       }
     ],
   },
