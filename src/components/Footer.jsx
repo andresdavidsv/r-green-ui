@@ -1,24 +1,25 @@
 import React from 'react';
-import lg_little_f from '../assets/img/little_logo.svg';
+import { Link } from 'react-router-dom';
+import lg_little_f from '../assets/static/icon_black.svg';
 
 const Footer = () => (
   
     <section className="bottom-0 w-full ">
 
-      <div className="bg-gradient-to-b from-green-500 to-green-800 text-white">
+      <div id="little_footer" className="flex items-stretch">
 
-        <div className="w-full flex items-center">
+        <div className="flex w-full  items-center justify-center">
 
-          <div className="w-full  ">
-            <a className="opacity-90 m-5">About Us</a>
-            <a className="opacity-90 m-5">Responsibilities</a>
-            <a className="opacity-90 m-5">Out Services</a>
-            <a className="opacity-90 m-5">Contact</a>
+          <div>
+            <Link to='/perfil' style={{marginRight:'1em'}} >About Us</Link>
+            <Link to='/perfil' style={{marginRight:'1em'}} >Out Services</Link>
           </div>
 
-          <img src={lg_little_f} alt="" className='w-20' />
-
-          <div className="flex">
+          <div className="mx-20" >
+            <img src={lg_little_f} alt="icon_footer" className='w-8' /> 
+          </div>
+        
+          <div>
             <i className="fab m-5 fa-facebook-f"></i>
             <i className="fab m-5 fa-twitter"></i>
             <i className="fab m-5 fa-instagram"></i>

@@ -1,14 +1,14 @@
 import React from 'react';
-import Ficha from '../components/Pedir/Ficha';
+import Ficha from '../components/Order/Ficha';
 
-const Pedir = ()=> {
+const Order = ()=> {
 
     return(
         
-        <section id="pedirConteiner">
+        <section id="orderConteiner" className="bg-blue-500 bg-opacity-75">
           
             {/* Ficha numero 1*/ }
-            <section id='Ficha1' className='w-1/3 inline-block bg-center h-full bg-no-repeat'  >
+            <section id='Ficha1' className='w-1/3 inline-block bg-center h-full bg-no-repeat '  >
                 <Ficha 
                     txt_uno="Servicio"
                     txt_dos="Multimedia products"
@@ -52,5 +52,5 @@ const Pedir = ()=> {
 }
 
   
-  export default (Pedir);
+  export default (Order);
   

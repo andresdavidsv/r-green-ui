@@ -1,12 +1,13 @@
 .header {
 	align-items: center;
-	background: #21c08b;
-	color: white;
+	background: #2D2D4A;
+	color: #00AF46;
 	display: flex;
 	height: 100px;
 	justify-content: space-between;
 	top: 0px;
 	width: 100%;
+	border-bottom: 0.2em solid rgb(191,210,85) ;
 }
 
 .header__img {
@@ -15,7 +16,7 @@
 }
 
 .header__menu {
-	margin-right: 30px;
+	margin-right: 100px;
 }
 
 .header__menu ul {
@@ -54,7 +55,11 @@ ul:hover {
 
 .header__menu--profile img {
 	margin-right: 8px;
-	width: 40px;
-	border-radius: 50%;
+	width: 3em;
+	//border-radius: 50%;
 	object-fit: cover;
+}
+
+.header p{
+	margin-left: 30px;
 }

@@ -3,6 +3,9 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import gravatar from '../utils/gravatar';
 import { logoutRequest } from '../actions';
+import icon_logo from '../assets/static/icon_black.svg';
+import logo from '../assets/static/R-Green_2.svg';
+
 
 const Header = (props) => {
   const { user } = props;
@@ -14,7 +17,7 @@ const Header = (props) => {
   return (
     <header className="header">
       <Link to='/'>
-        <img className='header__img' src='' alt='R Green' />
+        <img className='header__img' src={logo} alt='R Green' />
       </Link>
       <div className='header__menu'>
 
@@ -22,22 +25,21 @@ const Header = (props) => {
           {hasUser ? (
             <img src={gravatar(user.email)} alt={user.email} />
           ) : (
-            <img src='' alt='User icon' />
+            <img src={icon_logo} alt='User icon'  />
           )}
-          <p>Perfil</p>
-        </div>
-
-        <div className='header__menu--profile'>
-          
-          <p>Pedir</p>
+              <Link to='/perfil' style={{marginRight:'1em'}} >Perfil</Link>
+              <Link to='/order' style={{marginRight:'1em'}}>Pedir</Link>
+              <Link to='/request' style={{marginRight:'1em'}}>Pedidos</Link>
         </div>
 
         <ul>
+
           {hasUser ? (
             <li>
               <Link to='/'>{user.name}</Link>
             </li>
           ) : null}
+
           {hasUser ? (
             <li>
               <Link to='/' onClick={handleLogout}>
@@ -49,6 +51,7 @@ const Header = (props) => {
               <Link to='/login'>Iniciar Sesión</Link>
             </li>
           )}
+
         </ul>
       </div>
     </header>
