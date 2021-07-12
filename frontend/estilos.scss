@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$LetraTitulo: #2d2d4a;
+$letraTexto: #111111;
+$letraTextoAlt: #6ac17d;
+
+$backgraund: #2d2d4a;
+$backgraundLogin: #2d2d4acb;
+
+.section-navigation {
+  height: 50px;
+  background-color: $backgraund;
+  nav {
+    color: $letraTextoAlt;
+    .fas fa-recycle { color: green;}
+  }
+}
+
+.section-header {
+  background-image: url(https://pngimage.net/wp-content/uploads/2018/05/bg-green-png-1.png);
+  //background: url(/R-Green/PROYECTO/Assets/img/greenbg.png);
+  background-color: $backgraund;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 520px;
+  z-index: 1;
+  .presentacion {
+    height: 350px;
+    width: 700px;
+    margin-left: 100px;
+    margin-top: 70px;
+    h1 {
+      color: $LetraTitulo;
+      font-size: 70px;
+      margin-top: 60px;
+    }
+    p {
+      color: $letraTexto;
+      font-size: 30px;
+      margin-top: 20px;
+    }
+  }
+  .contenerdorLogin {
+    background-color: $backgraundLogin;
+    border: $backgraund solid 2px;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 330px;
+    width: 250px;
+    margin-left: 180px;
+    margin-top: 100px;
+    .botonEnvio{
+      background-color: $backgraundLogin ;
+      border: $letraTextoAlt solid 2px;
+      border-radius: 5%;
+      color:$letraTextoAlt
+      
+    }
+  }
+  a,
+  label {
+    color: $letraTextoAlt;
+  }
+  label,
+  input,
+  button {
+    margin-top: 10px;
+  }
+}
+.topics {
+  display: flex;
+  flex-direction: row;
+  background-color: $backgraund;
+  justify-content: center;
+  height: 330px;
+  .temas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 325px;
+    background-color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 20px 25px;
+    float: center;
+    z-index: 9000;
+    top: -20px;
+    img,
+    h2,
+    p {
+      margin-top: 10px;
+    }
+    h2 {
+      color: $letraTextoAlt;
+    }
+  }
+}
+.information {
+  height: 60px;
+  background-color: yellowgreen;
+}

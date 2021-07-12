@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.section-navigation {
+  height: 50px;
+  background-color: #2d2d4a;
+}
+
+.section-navigation nav {
+  color: #6ac17d;
+}
+
+.section-navigation nav .fas fa-recycle {
+  color: green;
+}
+
+.section-header {
+  background-image: url(https://pngimage.net/wp-content/uploads/2018/05/bg-green-png-1.png);
+  background-color: #2d2d4a;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 520px;
+  z-index: 1;
+}
+
+.section-header .presentacion {
+  height: 350px;
+  width: 700px;
+  margin-left: 100px;
+  margin-top: 70px;
+}
+
+.section-header .presentacion h1 {
+  color: #2d2d4a;
+  font-size: 70px;
+  margin-top: 60px;
+}
+
+.section-header .presentacion p {
+  color: #111111;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.section-header .contenerdorLogin {
+  background-color: #2d2d4acb;
+  border: #2d2d4a solid 2px;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 330px;
+  width: 250px;
+  margin-left: 180px;
+  margin-top: 100px;
+}
+
+.section-header .contenerdorLogin .botonEnvio {
+  background-color: #2d2d4acb;
+  border: #6ac17d solid 2px;
+  border-radius: 5%;
+  color: #6ac17d;
+}
+
+.section-header a,
+.section-header label {
+  color: #6ac17d;
+}
+
+.section-header label,
+.section-header input,
+.section-header button {
+  margin-top: 10px;
+}
+
+.topics {
+  display: flex;
+  flex-direction: row;
+  background-color: #2d2d4a;
+  justify-content: center;
+  height: 330px;
+}
+
+.topics .temas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  width: 325px;
+  background-color: white;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 20px 25px;
+  float: center;
+  z-index: 9000;
+  top: -20px;
+}
+
+.topics .temas img,
+.topics .temas h2,
+.topics .temas p {
+  margin-top: 10px;
+}
+
+.topics .temas h2 {
+  color: #6ac17d;
+}
+
+.information {
+  height: 60px;
+  background-color: yellowgreen;
+}
