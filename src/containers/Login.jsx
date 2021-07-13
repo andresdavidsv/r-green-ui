@@ -20,7 +20,11 @@ const Login = props => {
     props.history.push('/')
   }
   return(
+    
   <section className='login'>
+
+  <Link to='/pedir'>Peticiones</Link>
+  
     <section className='login__container'>
       <h2>Inicia sesión</h2>
       <form className='login__container--form' onSubmit={handleSubmit}>
@@ -64,6 +68,9 @@ const Login = props => {
       <p className='login__container--register'>
         No tienes ninguna cuenta
         <Link to='/register'>Regístrate</Link>
+        <br></br>
+        
+
       </p>
     </section>
   </section>

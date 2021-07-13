@@ -3,6 +3,9 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import gravatar from '../utils/gravatar';
 import { logoutRequest } from '../actions';
+import icon_logo from '../assets/static/icon_black.svg';
+import logo from '../assets/static/R-Green_2.svg';
+
 
 const Header = (props) => {
   const { user } = props;
@@ -11,50 +14,48 @@ const Header = (props) => {
     props.logoutRequest({});
   };
 
-return (
-  <header className='header'>
-    <Link to='/'>
-      <img className='header__img' src='' alt='R Green' />
-    </Link>
-    <div className='header__menu'>
-      <div className='header__menu--profile'>
-        {hasUser ? (
-          <img src={gravatar(user.email)} alt={user.email} />
-        ) : (
-          <img src='' alt='User icon' />
-        )}
-        <li>
-            <Link to='/Porfile'>Cerrar Sesión</Link>
-          </li>
+  return (
+    <header className="header">
+      <Link to='/'>
+        <img className='header__img' src={logo} alt='R Green' />
+      </Link>
+      <div className='header__menu'>
+
+        <div className='header__menu--profile'>
+          {hasUser ? (
+            <img src={gravatar(user.email)} alt={user.email} />
+          ) : (
+            <img src={icon_logo} alt='User icon'  />
+          )}
+              <Link to='/perfil' style={{marginRight:'1em'}} >Perfil</Link>
+              <Link to='/order' style={{marginRight:'1em'}}>Pedir</Link>
+              <Link to='/request' style={{marginRight:'1em'}}>Pedidos</Link>
+        </div>
+
+        <ul>
+
+          {hasUser ? (
+            <li>
+              <Link to='/'>{user.name}</Link>
+            </li>
+          ) : null}
+
+          {hasUser ? (
+            <li>
+              <Link to='/' onClick={handleLogout}>
+                Cerrar Sesión
+              </Link>
+            </li>
+          ) : (
+            <li>
+              <Link to='/login'>Iniciar Sesión</Link>
+            </li>
+          )}
+
+        </ul>
       </div>
-      <ul>
-      <li className='header__menu--profile'>
-        <p>
-          <Link to='/Request'>
-            Perfil
-          </Link> 
-        </p>
-      </li>
-        {hasUser ? (
-          <li>
-            <Link to='/'>{user.name}</Link>
-          </li>
-        ) : null}
-        {hasUser ? (
-          <li>
-            <Link to='/' onClick={handleLogout}>
-              Cerrar Sesión
-            </Link>
-          </li>
-        ) : (
-          <li>
-            <Link to='/login'>Iniciar Sesión</Link>
-          </li>
-        )}
-      </ul>
-    </div>
-  </header>
-);
+    </header>
+  );
 };
 
 const mapStateToProps = (state) => {

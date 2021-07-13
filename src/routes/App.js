@@ -7,6 +7,7 @@ import Request from '../containers/Request';
 import NotFound from '../containers/NotFound';
 import Layout from '../components/Layout';
 import Porfile from '../components/Porfile';
+import Order from '../containers/Order';
 
 
 const App = () => (
@@ -18,6 +19,7 @@ const App = () => (
         <Route exact path='/register' component={Register} />
         <Route exact path='/request' component={Request} />
         <Route exact path='/porfile' component={Porfile} />
+        <Route exact path='/order' component={Order}/>
         <Route component={NotFound} />
       </Switch>
     </Layout>

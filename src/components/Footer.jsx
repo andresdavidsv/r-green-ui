@@ -1,33 +1,36 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import lg_little_f from '../assets/static/icon_black.svg';
 
 const Footer = () => (
 
-    <section className="bottom-0 w-full ">
+  <section className="bottom-0 w-full ">
 
-      <div className="bg-gradient-to-b from-green-500 to-green-800 text-white">
+    <div id="little_footer" className="flex items-stretch">
 
-        <div className="w-full flex items-center">
+      <div className="flex w-full  items-center justify-center">
 
-          <div className="w-full  ">
-            <a className="opacity-90 m-5">About Us</a>
-            <a className="opacity-90 m-5">Responsibilities</a>
-            <a className="opacity-90 m-5">Out Services</a>
-            <a className="opacity-90 m-5">Contact</a>
-          </div>
+        <div>
+          <Link to='/' style={{ marginRight: '1em' }} >About Us</Link>
+          <Link to='/' style={{ marginRight: '1em' }} >Out Services</Link>
+        </div>
 
-          <div className="flex">
-            <i className="fab m-5 fa-facebook-f"></i>
-            <i className="fab m-5 fa-twitter"></i>
-            <i className="fab m-5 fa-instagram"></i>
-            <i className="fab m-5 fa-google"></i>
-          </div>
+        <div className="mx-20" >
+          <img src={lg_little_f} alt="icon_footer" className='w-8' />
+        </div>
 
+        <div>
+          <a href='https://www.facebook.com' target='_blank' className='fab m-5 fa-facebook-f'></a>
+          <a href='https://www.twitter.com' target='_blank' className='fab m-5 fa-twitter'></a>
+          <a href='https://www.instagram.com' target='_blank' className='fab m-5 fa-instagram'></a>
+          <a href='' target='_blank' className='fab m-5 fa-google'></a>
         </div>
 
       </div>
-    </section>
+
+    </div>
+  </section>
 
 );
-
 
 export default Footer;
