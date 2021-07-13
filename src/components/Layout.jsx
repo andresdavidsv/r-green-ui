@@ -6,11 +6,7 @@ const Layout = ({ children }) => (
   <div className='App'>
     <Header />
     {children}
-<<<<<<< Updated upstream
-    <Footer /> 
-=======
-    {<Footer />}
->>>>>>> Stashed changes
+    <Footer />
   </div>
 );
 export default Layout;

@@ -3,9 +3,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from '../containers/Home';
 import Login from '../containers/Login';
 import Register from '../containers/Register';
-import Peticiones from '../containers/Peticiones';
+import Request from '../containers/Request';
 import NotFound from '../containers/NotFound';
-import Peticiones from '../containers/Peticiones';
 import Layout from '../components/Layout';
 import Porfile from '../components/Porfile';
 
@@ -17,11 +16,8 @@ const App = () => (
         <Route exact path='/' component={Home} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/register' component={Register} />
-        <Route exact path='/peticiones' component={Peticiones} />
-<<<<<<< Updated upstream
-=======
+        <Route exact path='/request' component={Request} />
         <Route exact path='/porfile' component={Porfile} />
->>>>>>> Stashed changes
         <Route component={NotFound} />
       </Switch>
     </Layout>

@@ -15,29 +15,9 @@ const Home = ({myList,trends,originals}) => (
     <p>11</p>
     <p>11</p>
     <p>11</p>
-    <p>11</p>
-    <p>11</p>
-    <p>11</p>    <p>11</p>
-    <p>11</p>
-    <p>11</p>    <p>11</p>
-    <p>11</p>
-    <p>11</p>    <p>11</p>
-    <p>11</p>
-    <p>11</p>    <p>11</p>
-    <p>11</p>
-    <p>11</p>    <p>11</p>
-    <p>11</p>
-    <p>11</p>    <p>11</p>
-    <p>11</p>
-    <p>11</p>    <p>11</p>
-    <p>11</p>
-    <p>11</p>    <p>11</p>
-    <p>11</p>
-    <p>11</p>
   </div>
   </>
 );
-
 const mapStateToProps = state =>{
   return{
     myList: state.myList,
