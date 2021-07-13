@@ -3,8 +3,11 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from '../containers/Home';
 import Login from '../containers/Login';
 import Register from '../containers/Register';
+import Request from '../containers/Request';
 import NotFound from '../containers/NotFound';
 import Layout from '../components/Layout';
+import Porfile from '../components/Porfile';
+
 
 import Order from '../containers/Order';
 
@@ -19,6 +22,8 @@ const App = () => (
 
         <Route exact path='/order' component={Order}/>
 
+        <Route exact path='/request' component={Request} />
+        <Route exact path='/porfile' component={Porfile} />
         <Route component={NotFound} />
       </Switch>
     </Layout>

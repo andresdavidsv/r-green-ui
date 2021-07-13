@@ -8,12 +8,17 @@ const Home = ({myList,trends,originals}) => (
       <p key={item.id}>
         {item.id}
       </p>
+      
     ))}
+    <p>11</p>
+    <p>11</p>
+    <p>11</p>
+    <p>11</p>
+    <p>11</p>
   </div>
   </>
   
 );
-
 const mapStateToProps = state =>{
   return{
     myList: state.myList,
