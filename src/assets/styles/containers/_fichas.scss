@@ -1,5 +1,5 @@
 #orderConteiner{
-  height: 83.4vh;
+  height: 100%;
 }
 
 #Ficha1{
@@ -8,8 +8,10 @@
 
 #Ficha2{
   background-image: url("../img/pedir_3.jpg");
+  background-size: cover; 
 }
 
 #Ficha3{
   background-image: url("../img/pedir_1.jpg");
+  background-size: cover; 
 }
