@@ -1,4 +1,9 @@
 import React from 'react';
+import facebook from '../assets/img/Porfile/facebook.png';
+import instagram from '../assets/img/Porfile/instagram.png';
+import linkedin from '../assets/img/Porfile/linkedin.png';
+import twitter from '../assets/img/Porfile/twitter.png';
+
 
 const Porfile = () => (
   <section className="w-full">
@@ -54,6 +59,7 @@ const Porfile = () => (
 
               <div className="grid grid-cols-12 row-span-1">
                 <div className="col-span-1">
+                  <img src={linkedin} className='w-16' />
                 </div>
                 <div className="col-span-11">
                   <div className="form-item h-20">
@@ -67,6 +73,8 @@ const Porfile = () => (
 
               <div className="grid grid-cols-12 row-span-1">
                 <div className="col-span-1">
+                  <img src={instagram} className='w-16' />
+
                 </div>
                 <div className="col-span-11">
                   <div className="form-item">
@@ -80,6 +88,7 @@ const Porfile = () => (
 
               <div className="grid grid-cols-12 row-span-1">
                 <div className="col-span-1">
+                  <img src={facebook} className='w-16' />
                 </div>
                 <div className="col-span-11">
                   <div className="form-item">
@@ -93,6 +102,7 @@ const Porfile = () => (
 
               <div className="grid grid-cols-12 row-span-1">
                 <div className="col-span-1">
+                  <img src={twitter} className='w-16' />
                 </div>
                 <div className="col-span-11">
                   <div className="form-item">
@@ -107,7 +117,6 @@ const Porfile = () => (
           </form>
         </div>
       </div>
-
     </section>
   </section>
 );

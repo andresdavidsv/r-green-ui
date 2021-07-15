@@ -27,7 +27,7 @@ const Header = (props) => {
           ) : (
             <img src={icon_logo} alt='User icon'  />
           )}
-              <Link to='/perfil' style={{marginRight:'1em'}} >Perfil</Link>
+              <Link to='/porfile' style={{marginRight:'1em'}}>Perfil</Link>
               <Link to='/order' style={{marginRight:'1em'}}>Pedir</Link>
               <Link to='/request' style={{marginRight:'1em'}}>Pedidos</Link>
         </div>

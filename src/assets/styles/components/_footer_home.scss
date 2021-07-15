@@ -1,8 +1,15 @@
-.footer_home {
-    bottom: 0;
-    width: 100%;
-}
-.logo_completo{
-    width: 400px;
-    height: 50px;
+#footer_home{
+    background-color: #2D2D4A;
+    color :#00AF46;
+    border-top: 0.2em solid rgb(191,210,85) ;
+  }
+
+#line{
+    border-left: 6px solid rgb(233, 220, 230);
+    border-radius: 15px;
+    height: 110px;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+    justify-items: center;
 }

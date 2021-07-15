@@ -1,9 +1,10 @@
 import React from 'react';
+import Pagination from '../components/Pagination';
 
 const Request = () => {
     return (
-        <section>
-            <div className='flex flex-col items-center justify-between mt-6 md:flex-row'>
+        <section id='background_request' >
+            <div className='flex flex-col items-center justify-between md:flex-row'>
                 <div className='flex justify-between w-full pt-6 pl-6'>
                     <p className='ml-3 font-bold text-2xl'>Request</p>
                 </div>
@@ -42,14 +43,7 @@ const Request = () => {
                     </tr>
                 </thead>
             </table>
-            <div id='pagination' className='absolute0 w-full flex justify-center pt-4 items-center'>
-                <i className='fas fa-angle-left'></i>
-                <p className='leading-relaxed cursor-pointer mx-2 text-blue-600 hover:text-blue-600 text-sm'>1</p>
-                <p className='leading-relaxed cursor-pointer mx-2 text-sm hover:text-blue-600'>2</p>
-                <p className='leading-relaxed cursor-pointer mx-2 text-sm hover:text-blue-600'> 3 </p>
-                <p className='leading-relaxed cursor-pointer mx-2 text-sm hover:text-blue-600'> 4 </p>
-                <i className='fas fa-angle-right'></i>
-            </div>
+            <Pagination/>
         </section>
     )
 };
