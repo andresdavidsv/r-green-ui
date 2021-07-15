@@ -13,8 +13,8 @@ const Footer_home = () => (
                 <p>© 2021 R-Green Company</p>
             </div>
 
-            <div className='w-1/3 sm:w-1/3 inline-block items-center'>
-                <div  id='line'  ></div>
+            <div className='w-1/3 sm:w-1/3 inline-block'>
+                <hr />
             </div>
 
             <div className='mt-8 w-1/3 sm:w-1/3 inline-block jusify-items-center'>
