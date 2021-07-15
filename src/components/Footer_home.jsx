@@ -3,21 +3,21 @@ import { Link } from 'react-router-dom';
 import logo1 from '../assets/img/R-Green_2.0.svg';
 
 const Footer_home = () => (
-    <section className='bottom-0 w-full '>
+    <section id='footer_home' className='bottom-0 w-full h-28'>
 
-        <div id='footer_home' className='h-40 xl:px-40 pb-12 lg:px-20 md:px-10 sm:px-5 px-10'>
+        <div className='flex items-stretch'>
 
-            <div className='w-1/3 sm:w-1/3 inline-block justify-items-center'>
+            <div className='flex pl-36  inline-block items-center justify-center'>
                 <img src={logo1} className='w-48' />
                 <br />
                 <p>© 2021 R-Green Company</p>
             </div>
 
-            <div className='w-1/3 sm:w-1/3 inline-block'>
+            <div className='flex w-1/3 sm:w-1/3 items-center justify-center'>
                 <hr />
             </div>
 
-            <div className='mt-8 w-1/3 sm:w-1/3 inline-block jusify-items-center'>
+            <div className='flex mt-8 w-1/3 sm:w-1/3 inline-block items-center justify-center'>
                 <div>
                     <Link to='/' style={{ marginRight: '1em' }} >About Us</Link>
                     

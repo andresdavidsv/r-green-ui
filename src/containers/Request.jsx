@@ -6,7 +6,7 @@ const Request = () => {
         <section id='background_request' >
             <div className='flex flex-col items-center justify-between md:flex-row'>
                 <div className='flex justify-between w-full pt-6 pl-6'>
-                    <p className='ml-3 font-bold text-2xl'>Request</p>
+                    <p className='ml-3 font-bold text-2xl'>Peticiones</p>
                 </div>
                 <div className='w-full flex justify-end pl-2 pr-10 mt-2'>
                     <div className='w-full sm:w-64 inline-block relative '>

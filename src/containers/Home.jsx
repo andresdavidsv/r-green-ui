@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 const Home = ({myList,trends,originals}) => (
   <>
-  <div>
+  <div className='h-screen'>
     {originals.map((item)=>(
       <p key={item.id}>
         {item.id}
