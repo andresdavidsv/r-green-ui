@@ -1,28 +1,6 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-$LetraTitulo: #2d2d4a;
-$letraTexto: #111111;
-$letraTextoAlt: #6ac17d;
-
-$backgraund: #2d2d4a;
-$backgraundLogin: #2d2d4acb;
-
-.section-navigation {
-  height: 50px;
-  background-color: $backgraund;
-  nav {
-    color: $letraTextoAlt;
-    .fas fa-recycle { color: green;}
-  }
-}
-
-.section-header {
-  background-image: url(https://pngimage.net/wp-content/uploads/2018/05/bg-green-png-1.png);
+.section-home {
   //background: url(/R-Green/PROYECTO/Assets/img/greenbg.png);
+  background-image: url("../img/fondo.png");
   background-color: $backgraund;
   background-position: center;
   background-repeat: no-repeat;
@@ -59,12 +37,11 @@ $backgraundLogin: #2d2d4acb;
     width: 250px;
     margin-left: 180px;
     margin-top: 100px;
-    .botonEnvio{
-      background-color: $backgraundLogin ;
+    .botonEnvio {
+      background-color: $backgraundLogin;
       border: $letraTextoAlt solid 2px;
       border-radius: 5%;
-      color:$letraTextoAlt
-      
+      color: $letraTextoAlt;
     }
   }
   a,
