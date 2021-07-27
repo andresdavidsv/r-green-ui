@@ -6,7 +6,7 @@ import Register from '../containers/Register';
 import Request from '../containers/Request';
 import NotFound from '../containers/NotFound';
 import Layout from '../components/Layout';
-import Porfile from '../components/Porfile';
+import Profile from '../components/Profile';
 import Order from '../containers/Order';
 
 
@@ -18,7 +18,7 @@ const App = () => (
         <Route exact path='/login' component={Login} />
         <Route exact path='/register' component={Register} />
         <Route exact path='/request' component={Request} />
-        <Route exact path='/porfile' component={Porfile} />
+        <Route exact path='/profile' component={Profile} />
         <Route exact path='/order' component={Order}/>
         <Route component={NotFound} />
       </Switch>

@@ -1,11 +1,11 @@
 import React from 'react';
-import facebook from '../assets/img/Porfile/facebook.png';
-import instagram from '../assets/img/Porfile/instagram.png';
-import linkedin from '../assets/img/Porfile/linkedin.png';
-import twitter from '../assets/img/Porfile/twitter.png';
+import facebook from '../assets/img/Profile/facebook.png';
+import instagram from '../assets/img/Profile/instagram.png';
+import linkedin from '../assets/img/Profile/linkedin.png';
+import twitter from '../assets/img/Profile/twitter.png';
 
 
-const Porfile = () => (
+const Profile = () => (
   <section className="w-full">
     <section className="w-auto relative m-15 shadow-2xl rounded-3xl  overflow-hidden">
 
@@ -121,4 +121,4 @@ const Porfile = () => (
   </section>
 );
 
-export default Porfile;
+export default Profile;

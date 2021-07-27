@@ -25,14 +25,14 @@ const Header = (props) => {
           {hasUser ? (
             <>
               <img src={gravatar(user.email)} alt={user.email} />
-              <Link to='/porfile' style={{marginRight:'1em'}}>Perfil</Link>
+              <Link to='/profile' style={{marginRight:'1em'}}>Perfil</Link>
               <Link to='/order' style={{marginRight:'1em'}}>Pedir</Link>
               <Link to='/request' style={{marginRight:'1em'}}>Pedidos</Link>
             </>
           ) : (
             <img src={icon_logo} alt='User icon'  />
           )}
-          {/*   <Link to='/porfile' style={{marginRight:'1em'}}>Perfil</Link>
+          {/*   <Link to='/profile' style={{marginRight:'1em'}}>Perfil</Link>
               <Link to='/order' style={{marginRight:'1em'}}>Pedir</Link>
           <Link to='/request' style={{marginRight:'1em'}}>Pedidos</Link>*/}
         </div>
