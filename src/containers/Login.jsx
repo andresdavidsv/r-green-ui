@@ -2,6 +2,8 @@ import React,{useState} from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { loginRequest } from '../actions';
+import google_icon from "../assets/static/google_icon.png"
+import twitter_icon from "../assets/static/twitter_icon.png"
 
 const Login = props => {
   const[form,setValues] = useState({
@@ -57,12 +59,12 @@ const Login = props => {
       </form>
       <section className='login__container--social-media'>
         <div>
-          <img src='../assets/static/google-icon.png' /> Inicia sesión con
-          Google
+          <img src={google_icon} /> <a href="">Inicia sesión con
+          Google</a>
         </div>
         <div>
-          <img src='../assets/static/twitter-icon.png' /> Inicia sesión con
-          Twitter
+          <img src={twitter_icon} /> <a href="">Inicia sesión con
+          Twitter</a> 
         </div>
       </section>
       <p className='login__container--register'>

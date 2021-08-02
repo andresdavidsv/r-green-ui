@@ -20,10 +20,9 @@
   border-radius: 5%;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   color: $letraTextoAlt;
+  margin-top: 50px;
   margin-bottom: 50px;
-  border-radius: 40px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  color: $letraTextoAlt;
+  width: calc(100% / 2);
   h2 {
     font-size: 22px;
     font-weight: bold;
@@ -35,10 +34,20 @@
   padding: 60px 68px 40px;
 }
 
-.register__container--form {
-  display: flex;
-  flex-direction: column;
-  width: 350px;
+.register__container--form > .input{
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  height: 50px;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 0px 20px;
+  min-width: 100%;
 }
 
 .register__container a {
@@ -50,4 +59,5 @@
 
 .register__container a:hover {
   text-decoration: underline;
+  font-weight: bold;
 }
