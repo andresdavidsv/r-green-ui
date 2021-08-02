@@ -31,4 +31,4 @@ return (
     );
 };
 
-export default connect(null, mapDispatchToProps)(ForgetPassword);
+export default connect(null, )(ForgetPassword);
