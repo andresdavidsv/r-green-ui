@@ -8,6 +8,7 @@ import NotFound from '../containers/NotFound';
 import Layout from '../components/Layout';
 import Porfile from '../components/Porfile';
 import Order from '../containers/Order';
+import ForgetPassword from '../containers/ForgetPassword';
 
 
 const App = () => (
@@ -17,6 +18,7 @@ const App = () => (
         <Route exact path='/' component={Home} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/register' component={Register} />
+        <Route exact path='/forgetPassword' component={ForgetPassword} />
         <Route exact path='/request' component={Request} />
         <Route exact path='/porfile' component={Porfile} />
         <Route exact path='/order' component={Order}/>
