@@ -3,12 +3,17 @@
 
 //Components
 @import './components/header';
+@import './components/footer_home';
 @import './components/footer';
 
 //Containers
 @import './containers/login';
 @import './containers/register';
 @import './containers/notFound';
+@import './containers/fichas';
+@import './containers/request';
+@import './containers/home';
+@import './containers/forgetPassword';
 
 * {
   padding: 0;
@@ -23,9 +28,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
