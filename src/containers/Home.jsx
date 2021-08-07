@@ -1,5 +1,4 @@
 import React from "react";
-import { connect } from "react-redux";
 import hoja from "../assets/img/hoja.svg";
 import girasol from "../assets/img/girasol.svg"
 import arbol from "../assets/img/arbol.svg"
@@ -10,10 +9,8 @@ const Home = () => {
     <div>
     <section className="section-home">
     <div className="presentacion">
-        <h1>¿Quienes son 
-          <br />
-          R-Green?</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <h1>¿Que es R-Green?</h1>
+        <p>Esta es una plataforma en la cual puedes organizar mejor tus desechos.</p>
       </div>
     </section>
     <section className="topics">

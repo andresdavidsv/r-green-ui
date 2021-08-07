@@ -21,27 +21,35 @@ const Header = (props) => {
       </Link>
       <div className='header__menu'>
 
+        {hasUser ? (
+            <li className='header_options'>
+              <Link  to='/profile' style={{ marginRight: '1em' }}>Perfil</Link>
+              <Link  to='/order' style={{ marginRight: '1em' }}>Pedir</Link>
+              <Link  to='/request' style={{ marginRight: '1em' }}>Pedidos</Link>
+              
+            </li>
+          ) : null}
+
         <div className='header__menu--profile'>
           {hasUser ? (
             <img src={gravatar(user.email)} alt={user.email} />
           ) : (
             <img src={icon_logo} alt='User icon' />
           )}
-          <Link to='/profile' style={{ marginRight: '1em' }}>Perfil</Link>
-          <Link to='/order' style={{ marginRight: '1em' }}>Pedir</Link>
-          <Link to='/request' style={{ marginRight: '1em' }}>Pedidos</Link>
+          
           <ul>
             {hasUser ? (
               <li className='name_user'>
                 <Link to='/'>{user.name}</Link>
+                
+                
               </li>
             ) : null}
 
             {hasUser ? (
+              
               <li>
-                <Link to='/' onClick={handleLogout}>
-                  Cerrar Sesión
-                </Link>
+                <Link to='/' onClick={handleLogout}> Cerrar Sesión </Link>
               </li>
             ) : (
               <li>

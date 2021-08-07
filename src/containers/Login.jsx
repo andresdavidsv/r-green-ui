@@ -24,8 +24,6 @@ const Login = props => {
   return(
     
   <section className='login'>
-
-  <Link to='/pedir'>Peticiones</Link>
   
     <section className='login__container'>
       <h2>Inicia sesión</h2>
