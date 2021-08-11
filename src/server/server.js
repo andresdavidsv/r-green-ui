@@ -33,10 +33,7 @@ if (ENV === 'development') {
   app.use(express.static(`${__dirname}/public`));
   app.use(helmet());
   app.use(helmet.permittedCrossDomainPolicies());
-<<<<<<< HEAD
   app.use(helmet({ contentSecurityPolicy: false }));
-=======
->>>>>>> fd499e0eb0bce1dd6fdba0b8aaf87b53fcd7d080
   app.disable('x-powered-by');
 }
 
