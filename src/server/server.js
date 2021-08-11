@@ -12,12 +12,22 @@ import { renderRoutes } from 'react-router-config';
 import serverRoutes from '../frontend/routes/serverRoutes'
 
 import reducer from '../frontend/reducers';
-import initialState from '../frontend/initialState';
+
+import cookieParser from 'cookie-parser';
+import boom from '@hapi/boom';
+import passport from 'passport';
+import axios from 'axios';
 
 dotenv.config();
 
 const { ENV, PORT } = process.env;
 const app = express();
+app.use(express.json());
+app.use(cookieParser());
+app.use(passport.initialize());
+app.use(passport.session())
+
+require('./utils/auth/strategies/basic');
 
 if (ENV === 'development') {
   console.log('Development config');
@@ -67,13 +77,29 @@ const setResponse = (html, preloadedState) => {
   `)
 };
 
-const renderApp = (req, res) => {
+const renderApp = async (req, res) => {
+  let initialState;
+  const { email, first_name, last_name, user_name, id } = req.cookies;
+  if (id) {
+    initialState = {
+      user: {
+        email, first_name, last_name, user_name, id
+      },
+      orders: [],
+    }
+  } else {
+    initialState = {
+      user: {},
+      orders: [],
+    }
+  }
   const store = createStore(reducer, initialState);
   const preloadedState = store.getState();
+  const isLogged = (initialState.user.id);
   const html = renderToString(
     <Provider store={store}>
       <StaticRouter location={req.url} context={{}}>
-        {renderRoutes(serverRoutes)}
+        {renderRoutes(serverRoutes(isLogged))}
       </StaticRouter>
     </Provider>
   );
@@ -83,6 +109,59 @@ const renderApp = (req, res) => {
   );
   res.send(setResponse(html, preloadedState));
 };
+
+app.post("/auth/sign-in", async function (req, res, next) {
+  passport.authenticate("basic", function (error, data) {
+    try {
+      if (error || !data) {
+        next(boom.unauthorized());
+      }
+
+      req.login(data, { session: false }, async function (error) {
+        if (error) {
+          next(error);
+        }
+
+        const { token, ...user } = data;
+
+        res.cookie("token", token, {
+          httpOnly: !(ENV === 'development'),
+          secure: !(ENV === 'development')
+        });
+
+        res.status(200).json(user);
+      });
+    } catch (error) {
+      next(error);
+    }
+  })(req, res, next);
+});
+
+app.post("/auth/sign-up", async function (req, res, next) {
+  const { body: user } = req;
+
+  try {
+    const userData = await axios({
+      url: `${process.env.API_URL}/api/v1/auth/sign-up`,
+      method: "post",
+      data: {
+        'first_name': user.name,
+        'last_name': user.name,
+        'user_name': user.name,
+        'email': user.email,
+        'password': user.password,
+      }
+    });
+
+    res.status(201).json({
+      name: req.body.name,
+      email: req.body.email,
+      id: userData.data.id,
+    });
+  } catch (error) {
+    next(error);
+  }
+});
 
 app.get('*', renderApp);
 

@@ -19,3 +19,7 @@
 * npm i ignore-styles
 * npm i asset-require-hook
 * npm i helmet
+* npm i passport passport-http @hapi/boom axios
+* npm i cookie-parser express-session
+* npm i @babel/polyfill
+* npm i redux-thunk

@@ -7,46 +7,48 @@ import Profile from '../components/Profile';
 import Order from '../containers/Order';
 import ForgetPassword from '../containers/ForgetPassword';
 
-const routes = [
-  {
-    exact: true,
-    path: '/',
-    component: Home,
-  },
-  {
-    exact: true,
-    path: '/login',
-    component: Login,
-  },
-  {
-    exact: true,
-    path: '/register',
-    component: Register,
-  },
-  {
-    exact: true,
-    path: '/forgetPassword',
-    component: ForgetPassword,
-  },
-  {
-    exact: true,
-    path: '/request',
-    component: Request,
-  },
-  {
-    exact: true,
-    path: '/profile',
-    component: Profile,
-  },
-  {
-    exact: true,
-    path: '/order',
-    component: Order,
-  },
-  {
-    name: 'NotFound',
-    component: NotFound,
-  },
-];
+const serverRoutes = (isLogged) => {
+  return [
+    {
+      exact: true,
+      path: '/',
+      component: Home,
+    },
+    {
+      exact: true,
+      path: '/login',
+      component: Login,
+    },
+    {
+      exact: true,
+      path: '/register',
+      component: Register,
+    },
+    {
+      exact: true,
+      path: '/forgetPassword',
+      component: ForgetPassword,
+    },
+    {
+      exact: true,
+      path: '/request',
+      component: isLogged ? Request : Login,
+    },
+    {
+      exact: true,
+      path: '/profile',
+      component: isLogged ? Profile : Login,
+    },
+    {
+      exact: true,
+      path: '/order',
+      component: isLogged ? Order : Login,
+    },
+    {
+      name: 'NotFound',
+      component: NotFound,
+    },
+  ]
+}
 
-export default routes;
+export default serverRoutes;
