@@ -6,8 +6,8 @@ import cd from "../assets/img/cd.jpg"
 
 const Home = () => {
   return (
-    <div>
-    <section className="section-home">
+    <section className="main-home">
+      <section className="section-home">
     <div className="presentacion">
         <h1>¿Que es R-Green?</h1>
         <p>Esta es una plataforma en la cual puedes organizar mejor tus desechos.</p>
@@ -58,7 +58,7 @@ const Home = () => {
           <button>Aprende mas</button>
         </div>
       </section>
-    </div>
+    </section>
   );
 };
 export default Home;
