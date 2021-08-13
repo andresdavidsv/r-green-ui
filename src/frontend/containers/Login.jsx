@@ -56,7 +56,7 @@ const Login = props => {
               />
               <a> </a>Recuérdame
             </label>
-            <Link to='/forgetPassword'>Olvidé mi contraseña</Link>
+            <a href='/'>Olvidé mi contraseña</a>
           </div>
         </form>
         <section className='login__container--social-media'>
