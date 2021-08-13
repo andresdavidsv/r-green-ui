@@ -1,12 +1,12 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: ['./src/frontend/index.js', 'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=2000&reload=true'],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
+    filename: 'assets/app.js',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -35,18 +35,19 @@ module.exports = {
         test: /\.s[ac]ss$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
+      {
+        test: /\.(png|jpg|jpeg|svg)$/i,
+        type: 'asset/resource',
+      }
     ],
   },
   watchOptions: {
     poll: 1000,
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './public/index.html',
-      filename: 'index.html',
-    }),
+    new webpack.HotModuleReplacementPlugin,
     new MiniCssExtractPlugin({
-      filename: '[name].css',
+      filename: 'assets/app.css',
     }),
   ],
 };

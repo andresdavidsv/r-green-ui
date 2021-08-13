@@ -6,11 +6,11 @@ const TerserPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/frontend/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
-    publicPatch: '/',
+    filename: 'assets/app.js',
+    //publicPatch: '/',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -37,6 +37,10 @@ module.exports = {
         test: /\.s[ac]ss$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
+      {
+        test: /.(png|jpg|jpeg|svg)$/i,
+        type: 'assets/resource',
+      }
     ],
   },
   plugins: [
@@ -45,7 +49,7 @@ module.exports = {
       filename: 'index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
+      filename: 'assets/app.css',
     }),
     new CleanWebpackPlugin(),
   ],

@@ -1,0 +1,137 @@
+.section-home {
+  //background: url(/R-Green/PROYECTO/Assets/img/greenbg.png);
+  background-image: url("../img/fondo.png");
+  background-color: $backgraund;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 40em;
+  z-index: 1;
+  .presentacion {
+    height: 30em;
+    width: 70vw;
+    margin-left: 5em;
+    margin-top: 7em;
+    
+    h1 {
+      color: $LetraTitulo;
+      font-size: 10vw;
+      font-family: 'Lobster', cursive;
+      text-shadow: 1px 3px 2px #2D2D4A;
+    }
+    p {
+      color: $letraTexto;
+      font-size: 2vw;
+      width: 60vw;
+      padding: 0.5em 3em 0.5em ;
+    }
+  }
+  a,
+  label {
+    color: $letraTextoAlt;
+  }
+  label,
+  input,
+  button {
+    margin-top: 10px;
+  }
+}
+.topics {
+  display: flex;
+  flex-direction: row;
+  background-color: $backgraund;
+  justify-content: center;
+  height: 400px;
+  .temas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 325px;
+    background-color: white;
+    margin-top: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 20px 25px;
+    float: center;
+    z-index: 9000;
+    &:hover{
+      transform: scale(1.1);
+      overflow: hidden;
+      transition-duration: 1s;
+    }
+    img,
+    h2,
+    p {
+      margin-top: 10px;
+    }
+    img {
+      height: 65px;
+    }
+    h2 {
+      color: $letraTextoAlt;
+      font-size: 22px;
+      font-weight: bold;
+    }
+  }
+}
+.mundo-mejor {
+  display: flex;
+  flex-direction: row;
+  background-image: url("../img/bggr.png");
+  div {
+    width: 50%;
+  }
+  img {
+    &:hover{
+      filter: grayscale(95%);
+      transition-duration: 2s;
+    }
+  }
+  .lista-mejora-mundo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8;
+    align-items: center;
+    h2 {
+      color: $LetraTitulo;
+      font-size: 48px;
+      font-weight: bold;
+      padding-inline-start: 10px;
+      margin-block-start: 1em;
+    }
+    ol {
+      display: block;
+      list-style-type: decimal;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 60px;
+      font-size: 16px;
+    }
+    button {
+      background-color: rgba(63, 46, 46, 0.445);
+      border: none;
+      border-radius: 25px;
+      color: $white;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      font-family: "Muli", sans-serif;
+      height: 50px;
+      width: 200px;
+      letter-spacing: 1px;
+      margin: 10px 0px;
+      &:hover {
+        font-weight: bold;
+        background-color: $letraTextoAlt;
+        transition-duration: 3s;
+        border:$LetraTitulo solid 1px;
+      }
+    }
+  }
+}
