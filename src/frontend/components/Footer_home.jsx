@@ -16,7 +16,7 @@ const Footer_home = () => (
             </div>
             <div className='flex mt-8 w-1/2 pr-28  sm:w-1/2 inline-block items-center justify-center'>
                 <div>
-                    <Link to='/About_us' style={{ marginRight: '1em' }} >Acerca de Nosotros</Link>
+                    <Link to='/' style={{ marginRight: '1em' }} >About Us</Link>
                     
                 </div>
                 <br />

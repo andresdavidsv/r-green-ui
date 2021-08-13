@@ -11,7 +11,7 @@ const Footer = () => (
       <div className="flex w-full  items-center justify-center">
 
         <div>
-          <Link to='/About_us' style={{ marginRight: '1em' }} >Acerca de Nosotros</Link>
+          <Link to='/' style={{ marginRight: '1em' }} >About Us</Link>
           <Link to='/' style={{ marginRight: '1em' }} >Out Services</Link>
         </div>
 
