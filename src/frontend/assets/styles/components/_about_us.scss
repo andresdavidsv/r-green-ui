@@ -1,0 +1,44 @@
+.about {
+    background-image: url("../img/fondo.png");
+    background-color: $backgraund;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+  }
+  #icons {
+    &:hover {
+      transform: scale(1.1);
+      overflow: hidden;
+      transition-duration: 1s;
+    }
+  }
+  #section2 {
+    background-color: $backgraundLogin;
+    border: $backgraund solid 2px;
+    border-radius: 5%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    color: $letraTextoAlt;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  label, input{
+      color: white;
+  }
+  h3{
+      font-size: 30px;
+      font-weight: bold;
+  }
+  .titulo{
+      margin-left: 25px;
+      margin-right: 25px;
+  }
+  input{
+      text-emphasis-color: white;
+  }

@@ -9,6 +9,7 @@ import Layout from '../components/Layout';
 import Profile from '../components/Profile';
 import Order from '../containers/Order';
 import ForgetPassword from '../containers/ForgetPassword';
+import About_us from '../components/About_us';
 
 const App = ({ isLogged }) => (
   <BrowserRouter>
@@ -21,6 +22,7 @@ const App = ({ isLogged }) => (
         <Route exact path='/request' component={isLogged ? Request : Login} />
         <Route exact path='/profile' component={isLogged ? Profile : Login} />
         <Route exact path='/order' component={isLogged ? Order : Login} />
+        <Route exact path='/about_us' component={About_us}/>
         <Route component={NotFound} />
       </Switch>
     </Layout>

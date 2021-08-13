@@ -6,8 +6,8 @@ import cd from "../assets/img/cd.jpg"
 
 const Home = () => {
   return (
-    <div>
-    <section className="section-home">
+    <section className="main-home">
+      <section className="section-home">
     <div className="presentacion">
         <h1>¿Que es R-Green?</h1>
         <p>Esta es una plataforma en la cual puedes organizar mejor tus desechos.</p>
@@ -15,37 +15,34 @@ const Home = () => {
     </section>
     <section className="topics">
         <div className="temas">
-          <img src={arbol} alt="icono1" /> <h2>Eco System</h2>
+          <img src={arbol} alt="icono1" /> <h2>Contaminación</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
-            accusantium quo delectus earum,{" "}
+          Se evita que estos residuos acaben en los vertederos, que además de estar cada vez más saturados, tienen un enorme impacto ambiental. Hacen parte de una fuente de insalubridad que provoca más de 500.000 muertes anuales a nivel global.{" "}
           </p>
         </div>
         <div className="temas">
           <img src={hoja} alt="icono2" />
-          <h2>Biology</h2>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
-            accusantium quo delectus earum,{" "}
-          </p>
+          <h2>Reciclaje</h2>
+          <p>          
+          Reduce el consumo de nueva materia prima y el uso de energía, previene la contaminación del aire y del agua, disminuye las emisiones de gases de efecto invernadero en comparación con la producción de plásticos.          </p>
         </div>
         <div className="temas">
           <img src={girasol} alt="icono3" />
-          <h2>Organic</h2>
+          <h2>Orgánico</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
-            accusantium quo delectus earum,{" "}
+          Materiales que pueden ser descompuestos por microorganismos, Cuando este tipo de desechos se encuentran en exceso en el agua, la proliferación de bacterias agota el oxígeno.{" "}
+          {" "} 
           </p>
         </div>
       </section>
       <section className="mundo-mejor">
-        <div>
-          <img src={cd} alt="ImagenBB" />
+        <div className="boy">
+          <img  src={cd} alt="ImagenBB" />
         </div>
         <div className="lista-mejora-mundo">
-          <h2>Green World For
+          <h2>Mundo verde para
             <br />
-            Our Future Generation
+             nuestra generación futura
           </h2>
           <ol>
             <li> Crecimiento superior al de la capacidad de generación de combustibles fósiles </li>
@@ -58,7 +55,7 @@ const Home = () => {
           <button>Aprende mas</button>
         </div>
       </section>
-    </div>
+    </section>
   );
 };
 export default Home;
