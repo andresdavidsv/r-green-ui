@@ -105,7 +105,7 @@ const renderApp = async (req, res) => {
   );
   res.set(
     'Content-Security-Policy',
-    "img-src 'self' http://dummyimage.com",
+    "img-src 'self' https://gravatar.com",
   );
   res.send(setResponse(html, preloadedState));
 };
