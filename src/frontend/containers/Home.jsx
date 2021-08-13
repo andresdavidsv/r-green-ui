@@ -15,27 +15,23 @@ const Home = () => {
     </section>
     <section className="topics">
         <div className="temas">
-          <img src={arbol} alt="icono1" /> <h2>Eco System</h2>
+          <img src={arbol} alt="icono1" /> <h2>Contaminación</h2>
           <p>
-          An ecosystem is a geographic area where plants, animals, and other organisms, as well as weather and landscapes, work together to form a bubble of life.{" "}
-          {" "}
+          Se evita que estos residuos acaben en los vertederos, que además de estar cada vez más saturados, tienen un enorme impacto ambiental. Hacen parte de una fuente de insalubridad que provoca más de 500.000 muertes anuales a nivel global.{" "}
           </p>
         </div>
         <div className="temas">
           <img src={hoja} alt="icono2" />
-          <h2>Biology</h2>
-          <p>
-            
-          Biology is a branch of science that deals with living organisms and their vital processes. Biology encompasses diverse fields, including botany, and others.{" "}
-          {" "}
-          </p>
+          <h2>Reciclaje</h2>
+          <p>          
+          Reduce el consumo de nueva materia prima y el uso de energía, previene la contaminación del aire y del agua, disminuye las emisiones de gases de efecto invernadero en comparación con la producción de plásticos.          </p>
         </div>
         <div className="temas">
           <img src={girasol} alt="icono3" />
-          <h2>Organic</h2>
+          <h2>Orgánico</h2>
           <p>
-          of, relating to, yielding, or involving the use of food produced with the use of feed or fertilizer of plant or animal origin{" "}
-          {" "}
+          Materiales que pueden ser descompuestos por microorganismos, Cuando este tipo de desechos se encuentran en exceso en el agua, la proliferación de bacterias agota el oxígeno.{" "}
+          {" "} 
           </p>
         </div>
       </section>
@@ -44,9 +40,9 @@ const Home = () => {
           <img  src={cd} alt="ImagenBB" />
         </div>
         <div className="lista-mejora-mundo">
-          <h2>Green World For
+          <h2>Mundo verde para
             <br />
-            Our Future Generation
+             nuestra generación futura
           </h2>
           <ol>
             <li> Crecimiento superior al de la capacidad de generación de combustibles fósiles </li>
