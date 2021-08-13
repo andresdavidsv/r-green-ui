@@ -12,7 +12,7 @@ const Footer = () => (
 
         <div>
           <Link to='/About_us' style={{ marginRight: '1em' }} >Acerca de Nosotros</Link>
-          <Link to='/' style={{ marginRight: '1em' }} >Out Services</Link>
+          <Link to='/' style={{ marginRight: '1em' }} >Nuestros Servicios</Link>
         </div>
 
         <div className="mx-20" >

@@ -40,8 +40,8 @@ const Home = () => {
         </div>
       </section>
       <section className="mundo-mejor">
-        <div>
-          <img src={cd} alt="ImagenBB" />
+        <div className="boy">
+          <img  src={cd} alt="ImagenBB" />
         </div>
         <div className="lista-mejora-mundo">
           <h2>Green World For

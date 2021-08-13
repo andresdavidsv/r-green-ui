@@ -36,7 +36,7 @@ const About_us = () => (
             <div className="grid grid-rows-4  pr-10 font-serif">
               <div className="grid grid-cols-12 row-span-1">
                 <div className="col-span-1">
-                  <img src={linkedin} className="w-16" />
+                  <img src={linkedin} id="icons" className="w-16" />
                 </div>
                 <div className="col-span-11">
                   <div className="form-item h-20">
@@ -53,7 +53,7 @@ const About_us = () => (
 
               <div className="grid grid-cols-12 row-span-1">
                 <div className="col-span-1">
-                  <img src={instagram} className="w-16" />
+                  <img src={instagram} id="icons" className="w-16" />
                 </div>
                 <div className="col-span-11">
                   <div className="form-item">
@@ -70,7 +70,7 @@ const About_us = () => (
 
               <div className="grid grid-cols-12 row-span-1">
                 <div className="col-span-1">
-                  <img src={facebook} className="w-16" />
+                  <img src={facebook} id="icons" className="w-16" />
                 </div>
                 <div className="col-span-11">
                   <div className="form-item">
@@ -87,7 +87,7 @@ const About_us = () => (
 
               <div className="grid grid-cols-12 row-span-1">
                 <div className="col-span-1">
-                  <img src={twitter} className="w-16" />
+                  <img src={twitter} id="icons" className="w-16" />
                 </div>
                 <div className="col-span-11">
                   <div className="form-item">

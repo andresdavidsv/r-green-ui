@@ -12,13 +12,7 @@
   padding: 0px 30px;
   min-height: calc(100vh - 200px);
 }
-img {
-  &:hover {
-    transform: scale(1.1);
-    overflow: hidden;
-    transition-duration: 1s;
-  }
-}
+
 #section1 {
   background-color: $backgraundLogin;
   border: $backgraund solid 2px;
