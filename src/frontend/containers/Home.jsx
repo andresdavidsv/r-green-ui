@@ -17,25 +17,24 @@ const Home = () => {
         <div className="temas">
           <img src={arbol} alt="icono1" /> <h2>Eco System</h2>
           <p>
-          An ecosystem is a geographic area where plants, animals, and other organisms, as well as weather and landscapes, work together to form a bubble of life.{" "}
-          {" "}
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+            accusantium quo delectus earum,{" "}
           </p>
         </div>
         <div className="temas">
           <img src={hoja} alt="icono2" />
           <h2>Biology</h2>
           <p>
-            
-          Biology is a branch of science that deals with living organisms and their vital processes. Biology encompasses diverse fields, including botany, and others.{" "}
-          {" "}
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+            accusantium quo delectus earum,{" "}
           </p>
         </div>
         <div className="temas">
           <img src={girasol} alt="icono3" />
           <h2>Organic</h2>
           <p>
-          of, relating to, yielding, or involving the use of food produced with the use of feed or fertilizer of plant or animal origin{" "}
-          {" "}
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+            accusantium quo delectus earum,{" "}
           </p>
         </div>
       </section>
